@@ -1,0 +1,60 @@
+$space-max: 300;
+$space-min: 0;
+
+@while $space-min <= $space-max {
+  .mr-#{$space-min} {
+    margin-right: #{$space-min}px !important;
+  }
+  .mt-#{$space-min} {
+    margin-top: #{$space-min}px !important;
+  }
+  .ml-#{$space-min} {
+    margin-left: #{$space-min}px !important;
+  }
+  .mb-#{$space-min} {
+    margin-bottom: #{$space-min}px !important;
+  }
+  .mx-#{$space-min} {
+    margin-right: #{$space-min}px !important;
+    margin-left: #{$space-min}px !important;
+  }
+  .my-#{$space-min} {
+    margin-top: #{$space-min}px !important;
+    margin-bottom: #{$space-min}px !important;
+  }
+
+  .pr-#{$space-min} {
+    padding-right: #{$space-min}px !important;
+  }
+  .pt-#{$space-min} {
+    padding-top: #{$space-min}px !important;
+  }
+  .pl-#{$space-min} {
+    padding-left: #{$space-min}px !important;
+  }
+  .pb-#{$space-min} {
+    padding-bottom: #{$space-min}px !important;
+  }
+  .px-#{$space-min} {
+    padding-right: #{$space-min}px !important;
+    padding-left: #{$space-min}px !important;
+  }
+  .py-#{$space-min} {
+    padding-top: #{$space-min}px !important;
+    padding-bottom: #{$space-min}px !important;
+  }
+
+  $space-min: $space-min + 1;
+}
+
+.text {
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center;
+  }
+}

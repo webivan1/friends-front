@@ -1,0 +1,36 @@
+.online-user-detect-icon {
+  font-size: 1.2rem;
+  fill: material_color('grey');
+  opacity: 0.5;
+  margin-right: 5px;
+
+  &.active {
+    fill: material_color('green');
+    opacity: 1;
+  }
+}
+
+.online-user-detect-avatar {
+  position: relative;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: material-color('grey');
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &.active {
+    &:before {
+      background: material-color('green');
+      border-color: material-color('green', '700');
+    }
+  }
+}
